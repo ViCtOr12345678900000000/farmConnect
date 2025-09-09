@@ -1,0 +1,111 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-info h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.product-info p {
+    margin: 0 0 1rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.product-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.btn-action {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-action.message-btn {
+    background-color: #28a745;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+}
+
+.btn-action.message-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(40, 167, 69, 0.3);
+}
+
+.btn-action.my-product {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.btn-favorite {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #28a745;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-favorite:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-favorite.favorited {
+    background-color: #28a745;
+    color: #fff;
+    cursor: default;
+}
+
+.btn-favorite.favorited:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.farmer-info {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}

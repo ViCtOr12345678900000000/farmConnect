@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+     <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Farm to Table</div>
+        <nav>
+            <a href="farmer_dashboard.html">My Products</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="messages.html">Messages<span id="messages-notification"></span></a>
+            <a href="account.html">Account</a>
+            <a href="login.html" id="logout-btn">Log Out</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-content">
+        <h1 id="welcome-message">My Products</h1>
+        <button id="add-product-btn" class="btn-add-product">Add New Product</button>
+        
+        <table id="products-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </main>
+
+    <script src="farmer_dashboard.js"></script>
+</body>
+
+</html>
+

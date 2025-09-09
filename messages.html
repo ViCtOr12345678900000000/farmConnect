@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Farm to Table</div>
+        <nav>
+            <a href="farmer_dashboard.html">My Products</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="messages.html">Messages<span id="messages-notification"></span></a>
+            <a href="account.html">Account</a>
+            <a href="login.html" id="logout-btn">Log Out</a>
+        </nav>
+    </header>
+
+    <main class="messages-container">
+        <div class="conversation-list">
+            <h3>Conversations</h3>
+            <p id="no-conversations-message" style="display: none; text-align: center; font-style: italic; color: #888; padding: 1rem;">No conversations yet. Start a new one by interacting with a product!</p>
+            <ul id="conversations-ul">
+                </ul>
+        </div>
+        <div class="chat-box">
+            <h3 id="chat-partner-name"></h3>
+            <div id="message-history" class="message-history">
+                </div>
+            <form id="message-form" class="message-form">
+                <label for="media-input" class="media-button">+</label>
+                <input type="file" id="media-input" accept="image/*,video/*" style="display: none;">
+                <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="messages.js"></script>
+</body>
+
+</html>
+
+

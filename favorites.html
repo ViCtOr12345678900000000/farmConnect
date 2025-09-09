@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <link rel="stylesheet" href="dashboard.css">
+     <link rel="stylesheet" href="marketplace.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Farm to Table</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="buyer_dashboard.html">Marketplace</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="messages.html">Messages<span id="messages-notification"></span></a>
+            <a href="login.html" id="logout-btn">Log Out</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-content">
+        <h1>My Favorites</h1>
+        <p id="no-favorites-message" style="text-align: center; font-style: italic; color: #888;">Nothing here. Add products to favorites from the Marketplace.</p>
+        <div id="favorites-grid" class="product-grid">
+            </div>
+    </main>
+
+    <script src="favorites.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+     <link rel="stylesheet" href="buyer_dashboard.css"> <link rel="stylesheet" href="style_enhancements.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Farm to Table</div>
+        <nav>
+            <a href="buyer_dashboard.html">Home</a>
+            <a href="buyer_dashboard.html">Marketplace</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="messages.html">Messages<span id="messages-notification"></span></a>
+            <a href="login.html" id="logout-btn">Log Out</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-content">
+        <h1 id="welcome-message">Marketplace</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+        <p id="no-products-message" style="text-align: center; font-style: italic; color: #888; display: none;">No products have been uploaded yet.</p>
+        <div id="product-grid" class="product-grid">
+            </div>
+    </main>
+
+    <script src="buyer_dashboard.js"></script>
+</body>
+
+</html>
+
